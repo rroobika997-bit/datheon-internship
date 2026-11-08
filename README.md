@@ -1,17 +1,3 @@
-# Datheon Internship - Task 1: Superstore EDA
-
-## Problem
-Analyze customer purchase volume, monthly seasonality, category-wise revenue and discount sensitivity.
-
-## Tools
-Python, Pandas, Matplotlib, Seaborn, Jupyter/Colab
-
-## Files
-- Superstore_EDA.ipynb : Analysis notebook with cleaning code and 5 business findings
-- superstore_sales.csv : Dataset
-
-## Key Findings
-See the "Executive Takeaways" section in the notebook.
 # Datheon Internship Projects
 
 Data analytics projects completed as part of the Datheon internship program, built with Python (Pandas, Matplotlib, Seaborn) in Google Colab.
@@ -22,6 +8,8 @@ Data analytics projects completed as part of the Datheon internship program, bui
 - Churn_Analysis.ipynb : Task 3 notebook
 - telco_customer_churn.csv : Task 3 dataset
 
+Note: Task 1 notebook reads the file as "Superstore.csv". If you run it, rename superstore_sales.csv to Superstore.csv or update the file name in the first cell.
+
 ---
 
 ## Task 1: Exploratory Data Analysis on Superstore Retail Sales
@@ -30,10 +18,18 @@ Data analytics projects completed as part of the Datheon internship program, bui
 
 **Approach:**
 1. Loaded the dataset and profiled missing values
-2. Parsed order dates and extracted Year-Month
+2. Removed blank rows and duplicates, parsed order dates and extracted Year-Month
 3. Aggregated Sales and Profit by Category, Region, Segment and Sub-Category
 4. Visualized monthly sales trends and discount vs profit
-5. Documented 5 executive takeaways in the notebook
+5. Documented 6 executive takeaways in the notebook
+
+**Key Findings:**
+- Sales peak in November (352,461) and December (325,294); February is the weakest month (59,751)
+- Technology is the most profitable category (145,455); Furniture has high sales but a margin of only about 2.5%
+- Profit turns negative once discounts exceed 20%
+- Tables, Bookcases and Supplies are loss-making sub-categories
+- West leads in sales and profit; Central has the weakest margin
+- Consumer is the largest segment by sales and profit
 
 **Deliverable:** Superstore_EDA.ipynb (cleaning code, charts and annotated findings)
 
